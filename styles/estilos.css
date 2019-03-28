@@ -1,0 +1,97 @@
+body{
+    margin: 0
+}
+
+section.grupo{
+    display: flex;
+    width: 100%;
+}
+
+header{
+    text-align: center;
+    padding: 40px 0;
+}
+
+i{
+    font-size: 36px;
+}
+
+span{
+    font-family: 'Carter One', cursive; 
+    font-size: 50px;
+    margin: 0 20px;
+}
+
+div.houses{
+    width: 25%;
+    text-align: justify;
+    padding: 0 30px;
+    border: dashed 1px grey;
+}
+
+img{
+    width: 100%;
+    margin-top: 10px;
+}
+
+h3{
+    font-family: 'Carter One', cursive;  
+}
+
+p{
+    font-family: 'Josefin Sans', sans-serif;
+}
+ 
+@media only screen and (min-width: 1600px){
+    .grupo{
+        display: flex;
+    }
+    .houses{
+        flex-basis: 200px;
+        flex-grow: 1;
+    }
+}
+
+@media only screen and (min-width: 1280px){
+    .grupo{
+        display: flex;
+    }
+    .odd{
+        flex-basis: 200px;
+        flex: 2;
+    }
+    
+}
+
+@media only screen and (min-width: 800px){
+    section.grupo{
+        display: flex;
+    }
+    .even{
+        flex-basis: 200px;
+        flex: 2;
+    }
+    
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 790px){
+    section.grupo{
+        display: inline;
+    }
+    header{
+        position: fixed;
+        width: 100%;
+        background-color: #fff;
+        top: 0;
+        right: 0;
+        background-size: cover;
+    }
+    div.houses{
+        width: 82%;
+        margin: 0 auto;
+    }
+    div.gry{
+        margin-top: 250px;
+    }
+
+}
